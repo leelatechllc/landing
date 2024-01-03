@@ -6,7 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LEELATECH - Your Innovative Technology Solution Provider</title>
   <style>
-    /* ... (previous styles) ... */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px 0;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #logo {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 
@@ -68,7 +145,37 @@
   <section id="contact">
     <h2>Contact</h2>
     <form>
-      <!-- ... (contact form content) ... -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Work Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="interest">Select Interest:</label>
+      <select id="interest" name="interest">
+        <option value="CI/CD">CI/CD</option>
+        <option value="Cost-oriented Optimization">Cost-oriented Optimization</option>
+        <option value="Containerization">Containerization</option>
+        <option value="DBA">DBA</option>
+        <option value="Infrastructure as Code">Infrastructure as Code</option>
+        <option value="Logging and Monitoring">Logging and Monitoring</option>
+        <option value="Migration">Migration</option>
+        <option value="Network Administration">Network Administration</option>
+        <option value="Performance-oriented Optimization">Performance-oriented Optimization</option>
+        <option value="Security and Compliance">Security and Compliance</option>
+        <option value="Kubernetes">Kubernetes</option>
+        <option value="Software Development">Software Development</option>
+        <option value="Project Management">Project Management</option>
+        <option value="Technologies">Technologies</option>
+        <option value="End-to-end Turnkey">End-to-end Turnkey</option>
+        <option value="Products">Products</option>
+        <option value="Coming Soon">Coming Soon</option>
+      </select>
+
+      <label for="help">How can we help?</label>
+      <textarea id="help" name="help" rows="4" required></textarea>
+
+      <button type="submit">Get Started</button>
     </form>
   </section>
 </body>
