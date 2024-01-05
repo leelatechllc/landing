@@ -4,7 +4,9 @@ on:
     branches:
       - dev
       - main
-
+  push:
+    branches:
+      - main
 jobs:
   build:
     uses: leelatechllc/.github/workflows/standard-docker-ci.yaml@main
