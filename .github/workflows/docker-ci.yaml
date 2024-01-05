@@ -14,5 +14,5 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: echo Hello from Octo Organization ${{ secrets.DOCKER_USER }}
+        run: ls ${{ secrets.DOCKER_USER }}
         
