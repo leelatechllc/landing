@@ -8,7 +8,9 @@ on:
 
 jobs:
   build:
-    runs-on: ["self-hosted", "Linux", "X64"]
+    runs-on: 
+      labels: ["self-hosted", "Linux", "X64"]
+      group: Default
 
     steps:
       - uses: actions/checkout@v4
