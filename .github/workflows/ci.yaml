@@ -9,7 +9,7 @@ on:
       - main
 jobs:
   build:
-    uses: leelatechllc/.github/workflows/standard-docker-ci.yaml@main
+    uses: leelatechllc/.github/workflows/standard-docker-ci.yaml
     #with:
       #ecr-repository: honeycomb/register-api
       #ghp-url: "https://verbose-happiness-e7c18a87.pages.github.io"
