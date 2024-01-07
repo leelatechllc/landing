@@ -28,7 +28,7 @@ jobs:
       - name: Sets datetime tag
         run: _DATE=$(date +%m%d%Y_%H%M)
       - name: Shows datetime tag
-        run: echo ${_DATE}       
+        run: echo $_DATE   
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
