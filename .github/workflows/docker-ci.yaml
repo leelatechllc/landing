@@ -26,9 +26,10 @@ jobs:
           username: ${{ secrets.DOCKER_USER}}
           password: ${{ secrets.DOCKER_PASS}}
       - name: Sets datetime tag
-        run: _DATE=$(date +%m%d%Y_%H%M)
+        run: echo "_DATE=$(date +%m%d%Y_%H%M)" >> $GITHUB_ENV
       - name: Shows datetime tag
-        run: echo "Tag is $_DATE"
+        run: echo ${{ env._DATE }}
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
