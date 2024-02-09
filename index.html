@@ -9,6 +9,7 @@
   -->
   <chat-bot platform_id="88e5dbc7-f838-46e1-87a6-ee76341172df" user_id="204668f1-04c6-434f-892d-2194c655eb2b" chatbot_id="83e25098-fd5c-48f1-813d-701705000091"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
   <title>LEELATECH - Your Innovative Technology Solution Provider</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -182,6 +183,28 @@
       <button type="submit">Get Started</button>
     </form>
   </section>
+    <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>¡Bienvenido!</h2>
+      <p>Por favor, ingresa tu nombre, apellido y correo electrónico:</p>
+      <form id="form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <button type="button" onclick="submitForm()">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
